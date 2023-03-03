@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../context/auth.context";
+import Button from 'react-bootstrap/Button';
 
 function Navbar() {
   // Subscribe to the AuthContext to gain access to
@@ -11,7 +12,9 @@ function Navbar() {
   return (
     <nav>
       <Link to="/">
-        <button>Home</button>
+        <div className="inicio">
+        <Button variant="secondary">Inicio</Button>
+        </div>
       </Link>
 
       {isLoggedIn && (
@@ -31,11 +34,21 @@ function Navbar() {
         <>
           <Link to="/signup">
             {" "}
-            <button>Sign Up</button>{" "}
+            <div className="servicios">
+            <Button variant="secondary">Servicios</Button>{" "}
+            </div>
           </Link>
           <Link to="/login">
             {" "}
-            <button>Login</button>{" "}
+            <div className="quienes">
+            <Button variant="secondary">¿Quienes somos?</Button>{" "}
+            </div>
+          </Link>
+          <Link to="/">
+            {" "}
+            <div className="nuestros">
+            <Button variant="secondary">Nuestros Trabajos</Button>{" "}
+            </div>
           </Link>
         </>
       )}

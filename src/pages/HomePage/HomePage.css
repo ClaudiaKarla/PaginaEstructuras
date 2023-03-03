@@ -1,0 +1,138 @@
+*{
+  background-color:#e5e5e5;  
+}
+
+.lo1{
+    font-size: 20px;
+
+}
+
+.lo2{
+    font-size: 20px;
+
+}
+
+.logo{
+    margin-left: -920px;
+    margin-top: 50px;
+}
+
+.logo img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin-top: -20px;
+    margin-left: -180px;
+}
+
+.esp{
+    margin-top: 60px;
+ 
+}
+
+
+.pue{
+    margin-top: 100px;
+}
+
+.uno{
+    color: black;
+}
+
+.dos{
+    color: black;
+}
+
+.tres{
+    color: black;
+}
+
+.cuatro{
+    color: black;
+}
+
+.cinco{
+    color: black;
+}
+
+.seis{
+    color: black;
+}
+
+.formato{
+    margin-top: 50px;
+}
+
+.link{
+    margin-top: 50px;
+}
+
+.espec1{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.espec2{
+    margin-top: -520px;
+    margin-left: 730px;
+}
+
+.informacion{
+    line-height:8px;
+    text-align: justify;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.contacto{
+    margin: 30px;
+    margin-left: 80px;
+}
+
+.espacio{
+    margin-top: 30px;
+    color:transparent;
+}
+
+.logoDos img{
+    position: absolute;
+    margin-top: -230px;
+    margin-left: -350px;
+    width:230px;
+    height:230px;
+}
+
+.tel img{
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -250px;
+}
+
+.correoDos img{
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -160px;
+}
+
+.correoTres img{
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -80px;
+}
+
+.whatsUno img{
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -240px;
+}
+
+.whatsDos img{
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -160px;
+}

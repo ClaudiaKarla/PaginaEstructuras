@@ -1,0 +1,28 @@
+.inicio button{
+    position: absolute;
+text-decoration: none;
+margin-left: 200px;
+margin-top: 0px;
+}
+
+.servicios button{
+    position: absolute;
+    text-decoration: none;
+    margin-left: 270px;
+    margin-top: 0px;
+    }
+
+    .quienes button{
+        position: absolute;
+        text-decoration: none;
+        margin-left: 360px;
+        margin-top: 0px;
+        }
+
+        .nuestros button{
+            position: absolute;
+            text-decoration: none;
+            margin-left: 510px;
+            margin-top: 0px;
+            }
+    
