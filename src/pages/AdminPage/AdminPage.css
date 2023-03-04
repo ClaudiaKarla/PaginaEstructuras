@@ -1,0 +1,16 @@
+.espacio{
+    margin-top: 20px;
+    color: transparent;
+}
+
+.tit{
+    margin-top: 55px;
+    font-size: 30px;
+}
+
+.formularioDos{
+    margin-left: 330px;
+    margin-top: 40px;
+    max-width:50%;
+    max-height: fit-content;
+}

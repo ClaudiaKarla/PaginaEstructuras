@@ -1,38 +1,39 @@
-*{
-  background-color:#e5e5e5;  
+body{ 
+  background-color:#dcdcdd ;
+  /*  background-image: url("../../portada/fondoP.png");
+   background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+  */ 
 }
 
 .lo1{
     font-size: 20px;
-
-}
-
-.lo2{
-    font-size: 20px;
-
+    margin-top: 5px;
+    margin-left: 50px;
 }
 
 .logo{
     margin-left: -920px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .logo img{
-    position: absolute;
     width: 90px;
     height: 90px;
-    margin-top: -20px;
-    margin-left: -180px;
+    margin-top: -10px;
+    margin-left: 40px;
 }
 
 .esp{
-    margin-top: 60px;
- 
+    margin-top: 40px;
+    color: #0077b6;
+    font-size: 40px;
 }
 
 
 .pue{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .uno{
@@ -60,7 +61,10 @@
 }
 
 .formato{
-    margin-top: 50px;
+    margin-left: 330px;
+    margin-top: 40px;
+    max-width:50%;
+    max-height: fit-content;
 }
 
 .link{
@@ -68,7 +72,7 @@
 }
 
 .espec1{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 300px;
 }
 
@@ -87,6 +91,7 @@
 .contacto{
     margin: 30px;
     margin-left: 80px;
+    color: #0077b6;
 }
 
 .espacio{
@@ -136,3 +141,24 @@
     margin-left: -40px;
     margin-top: -160px;
 }
+
+.carrusel{
+    margin-top: 20px;
+    margin-left: 102px;
+    max-width: 85%;
+}
+
+.puedes{
+    color:#0077b6;
+    font-size: 20px;
+}
+
+.linea {
+    border-top: 1px solid #adb5bd;
+    height: 1px;
+    max-width: 1200px;
+    padding: 0;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+

@@ -1,0 +1,42 @@
+.pagina{
+    margin-top: 20px;
+    color: transparent;
+}
+
+.textoo{
+    margin-top: 70px;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 520px;
+}
+
+.lista{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 520px;
+}
+
+.serviciosUno img{
+    width: 1120px;
+	height:250px;
+    object-fit: cover;
+}
+
+.que{
+    margin-top: 20px;
+}
+
+.serviciosDos img{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 200px;
+    width: 350px;
+    height: auto;
+}
+
+.espacio{
+    margin-top: 30px;
+    color: transparent;
+}

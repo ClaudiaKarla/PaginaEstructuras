@@ -10,10 +10,12 @@ function Navbar() {
   const { isLoggedIn, user, logOutUser } = useContext(AuthContext);
 
   return (
+
     <nav>
+         
       <Link to="/">
         <div className="inicio">
-        <Button variant="secondary">Inicio</Button>
+        <Button /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Inicio</Button>
         </div>
       </Link>
 
@@ -23,7 +25,6 @@ function Navbar() {
 
           <Link to="/profile">
             <button>Profile</button>
-            {/* <img src="https://picsum.photos/id/402/200/300" style={{ width: 50, height: 50, borderRadius: 25}} alt="profile" /> */}
           </Link>
 
           <span>{user && user.name}</span>
@@ -38,21 +39,31 @@ function Navbar() {
             <Button variant="secondary">Servicios</Button>{" "}
             </div>
           </Link>
+
           <Link to="/login">
             {" "}
             <div className="quienes">
             <Button variant="secondary">¿Quienes somos?</Button>{" "}
             </div>
           </Link>
-          <Link to="/">
+
+          <Link to="/trabajos">
             {" "}
             <div className="nuestros">
             <Button variant="secondary">Nuestros Trabajos</Button>{" "}
             </div>
           </Link>
+
+          <Link to="/administrador">
+            {" "}
+            <div className="admin">
+            <Button variant="secondary">Admin</Button>{" "}
+            </div>
+          </Link>
         </>
       )}
     </nav>
+    
   );
 }
 

@@ -1,28 +1,35 @@
 .inicio button{
     position: absolute;
 text-decoration: none;
-margin-left: 200px;
+margin-left: 10px;
 margin-top: 0px;
 }
 
 .servicios button{
     position: absolute;
     text-decoration: none;
-    margin-left: 270px;
+    margin-left: 80px;
     margin-top: 0px;
     }
 
     .quienes button{
         position: absolute;
         text-decoration: none;
-        margin-left: 360px;
+        margin-left: 175px;
         margin-top: 0px;
         }
 
         .nuestros button{
             position: absolute;
             text-decoration: none;
-            margin-left: 510px;
+            margin-left: 330px;
             margin-top: 0px;
             }
+
+            .admin button{
+                position: absolute;
+                text-decoration: none;
+                margin-left: 490px;
+                margin-top: 0px;
+                }
     

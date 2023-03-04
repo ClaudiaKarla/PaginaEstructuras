@@ -1,0 +1,76 @@
+.botones{
+    margin-top: 20px;
+    color: transparent;
+}
+
+.titulo{
+    margin-top: 50px;
+    color: #0077b6;
+    font-size: 40px;
+}
+
+.historia{
+font-size: 20px;
+text-align: justify;
+margin-left: 700px;
+margin-right: 100px;
+}
+
+.mision{
+    font-size: 20px;
+    text-align: justify;
+margin-left: 20px;
+margin-right: 700px;
+margin-top: 150px;
+}
+
+.vision{
+    font-size: 20px;
+    text-align: justify;
+margin-left: 700px;
+margin-right: 100px;
+margin-top: 150px;
+}
+
+.empresas{
+    color: #0077b6;
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.imagen img{
+    margin-left: -600px;
+}
+
+.vyg img{
+    margin-left: 0px;
+    margin-top: -220px;
+    width: 150px;
+    height: 150px;
+}
+
+.pulso img{
+    margin-left: 610px;
+    margin-top: -260px;
+    width: 150px;
+    height: 150px;
+}
+
+.logoHistoria img{
+    margin-top: -2550px;
+    margin-left: -600px;
+}
+
+.cliente img{
+    margin-top: -1750px;
+    margin-left: 500px;
+    width: 500px;
+    height: auto;
+}
+
+.foto img{
+    margin-top: -1200px;
+    margin-left: -650px;
+    width: 350px;
+    height: auto;
+}

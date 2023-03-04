@@ -1,72 +1,90 @@
 import "./LoginPage.css";
-import { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../context/auth.context";
-import authService from "../../services/auth.service";
+
+
 
 function LoginPage() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState(undefined);
+  
 
-  const navigate = useNavigate();
-
-  const { storeToken, authenticateUser } = useContext(AuthContext);
-
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handlePassword = (e) => setPassword(e.target.value);
-
-  const handleLoginSubmit = (e) => {
-    e.preventDefault();
-    const requestBody = { email, password };
-
-    // Send a request to the server using axios
-    /* 
-    axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/login`)
-      .then((response) => {})
-    */
-
-    // Or using a service
-    authService
-      .login(requestBody)
-      .then((response) => {
-        // If the POST request is successful store the authentication token,
-        // after the token is stored authenticate the user
-        // and at last navigate to the home page
-        storeToken(response.data.authToken);
-        authenticateUser();
-        navigate("/");
-      })
-      .catch((error) => {
-        // If the request resolves with an error, set the error message in the state
-        const errorDescription = error.response.data.message;
-        setErrorMessage(errorDescription);
-      });
-  };
 
   return (
-    <div className="LoginPage">
-      <h1>Login</h1>
+    <div>
 
-      <form onSubmit={handleLoginSubmit}>
-        <label>Email:</label>
-        <input type="email" name="email" value={email} onChange={handleEmail} />
+      <div className="botones">
+        <p>.</p>
+      </div>
 
-        <label>Password:</label>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={handlePassword}
-        />
 
-        <button type="submit">Login</button>
-      </form>
-      {errorMessage && <p className="error-message">{errorMessage}</p>}
+      <div className="titulo">
+        <p>¿Quienes somos?</p>
+      </div>
 
-      <p>Don't have an account yet?</p>
-      <Link to={"/signup"}> Sign Up</Link>
+      <div className="historia">
+        <p>Historia</p>
+        <p>
+        Ingenieria Estructural, es una empresa mexicana dedicada 
+        a la realización de proyectos de ingeniería en diferentes 
+        ramos, fundada en la CDMX con oficinas centrales en 
+        Col.Moctezuma 2da. Sección, desde el año 2022. 
+        Nuestro objetivo principal es satisfacer las necesidades 
+        de nuestros clientes dando soluciones con las más amplias 
+        técnicas en el desarrollo de proyectos. En Ingenieria Estructural 
+        contamos con un equipo altamente multidisciplinario que integra 
+        el conocimiento y la experiencia para brindar seguridad y confianza 
+        a nuestros clientes, trabajamos en diferentes sectores, 
+        industriales, comerciales y habitacionales.
+        </p>
+      </div>
+
+      <div className="mision">
+        <p>Misión</p>
+        <p>
+        Ser la empresa de Ingeniería que logre más satisfacción 
+        en nuestros clientes al ofrecer los más altos estándares 
+        de calidad, seguridad y servicio en todos los trabajos 
+        que realizamos.
+        </p>
+      </div>
+
+      <div className="vision">
+        <p>Visión</p>
+        <p>
+        Ser una empresa de Ingeniería reconocida en el medio por 
+        la realización de trabajos con profesionalismo y calidad 
+        ofreciendo servicios de alto valor agregado que den una 
+        respuesta inmediata a las necesidades de nuestros clientes.
+        </p>
+      </div>
+
+
+      <div className="empresas">
+        <p>Nuestros Clientes</p>
+      </div>
+      <div className="imagen">
+      <img src={"./sedena.png"} />
+      </div>
+
+      <div className="vyg">
+      <img src={"./vyg.webp"} />
+      </div>
+
+      <div className="pulso">
+      <img src={"./pulso.jpg"} />
+      </div>
+
+      <div className="logoHistoria">
+      <img src={"./e1.png"} />
+      </div>
+
+      <div className="cliente">
+      <img src={"./ima1.png"} />
+      </div>
+
+      <div className="foto">
+      <img src={"./foto.jpg"} />
+      </div>
+
     </div>
+   
   );
 }
 

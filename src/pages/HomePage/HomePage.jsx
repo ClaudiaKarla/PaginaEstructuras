@@ -1,3 +1,4 @@
+import React from "react";
 import "./HomePage.css";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -10,7 +11,7 @@ import Card from 'react-bootstrap/Card';
 
 function HomePage() {
 
-
+  
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
@@ -48,11 +49,13 @@ function HomePage() {
 
 <div className="logo">
        <img src={"./e1.png"} />
-      <h3 className="lo1">INGENIERIA</h3>
-      <h3 className="lo2">ESTRUCTURAL</h3>
+      <div className="lo1">
+      <strong>INGENIERIA</strong>
+      <strong> ESTRUCTURAL</strong>
+      </div>
       </div>
 
-
+<div className="carrusel">
     <Carousel slide={false}>
     <Carousel.Item>
       <img
@@ -92,21 +95,22 @@ function HomePage() {
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
-
+  </div>
 
     <div>
-<div className="trabajos">
-{/*<FontAwesomeIcon />*/}
+
+<div>
+<div className="linea">
+	<a href="//parzibyte.me/blog"></a>
+	</div>
 </div>
+
 
 <div>  
       <div className="esp">
-        <h2>ESPECIALIDADES</h2>
+        <p>ESPECIALIDADES</p>
       </div>
     
-
-    
-   
 <div className="espec1">
    <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="./p.jpg" />
@@ -143,11 +147,15 @@ function HomePage() {
 
     </div>
 
-    
+    <div>
+<div className="linea">
+	<a href="//parzibyte.me/blog"></a>
+	</div>
+</div>
 
 
     <div className="pue">
-    <h3>PUEDES CONTACTARNOS LLENANDO EL FORMATO</h3>
+    <p className="puedes">Puedes contactarnos llenando el siguiente formato</p>
 
     <Form className="formato">
 
@@ -172,8 +180,8 @@ function HomePage() {
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Correo Electronico</Form.Label>
-        <Form.Control type="email" placeholder="Correo Electronico" />
+        <Form.Label>Correo Electrónico</Form.Label>
+        <Form.Control type="email" placeholder="Correo Electrónico" />
         <Form.Text className="text-muted">
           A la brevedad nos contactaremos contigo.
         </Form.Text>
@@ -181,7 +189,7 @@ function HomePage() {
 
       <Form.Group className="mb-3" controlId="formBasicText">
         <Form.Label>Mensaje</Form.Label>
-        <Form.Control type="text" placeholder="Cuentanos sobre tu proyecto" />
+        <Form.Control type="description" placeholder="Cuentanos sobre tu proyecto" />
       </Form.Group>
      
       <Button variant="primary" type="submit">
@@ -194,6 +202,12 @@ function HomePage() {
     </div>
 
     </div>
+
+    <div>
+<div className="linea">
+	<a href="//parzibyte.me/blog"></a>
+	</div>
+</div>
 
     <div className="informacion">
         <h4 className="contacto">Contacto</h4>
@@ -217,6 +231,7 @@ function HomePage() {
     </div>
 
     </div>
+   
   );
 }
 

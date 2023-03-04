@@ -5,11 +5,12 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import NuestrosTrabajosPage from "./pages/NuestrosTrabajosPage/NuestrosTrabajos";
+import AdminPage from "./pages/AdminPage/AdminPage";
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
-import FontAwesomeIcon from "./pages/HomePage/HomePage.jsx"
 
 function App() {
   return (
@@ -18,7 +19,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/*icono trabajos<FontAwesomeIcon icon="fa-solid fa-compass-drafting" />*/}
 
         <Route
           path="/profile"
@@ -45,6 +45,24 @@ function App() {
             </IsAnon>
           }
         />
+
+        <Route
+          path="/trabajos"
+          element={
+              <NuestrosTrabajosPage />
+          }
+        />
+
+        <Route
+          path="/administrador"
+          element={
+            <IsAnon>
+              <AdminPage />
+            </IsAnon>
+          }
+        />
+
+
       </Routes>
 
      

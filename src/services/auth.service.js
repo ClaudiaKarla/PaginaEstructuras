@@ -31,6 +31,18 @@ class AuthService {
     // return axios.post("http://localhost:5005/auth/singup");
   };
 
+  trabajo = (requestBody) => {
+    return this.api.post("/auth/trabajos", requestBody);
+    // same as
+    // return axios.post("http://localhost:5005/auth/singup");
+  };
+
+  administrador = (requestBody) => {
+    return this.api.post("/auth/administrador", requestBody);
+    // same as
+    // return axios.post("http://localhost:5005/auth/singup");
+  };
+
   verify = () => {
     return this.api.get("/auth/verify");
     // same as
