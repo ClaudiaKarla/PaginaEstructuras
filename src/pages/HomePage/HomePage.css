@@ -1,4 +1,4 @@
-body{ 
+*{ 
   background-color:#dcdcdd ;
   /*  background-image: url("../../portada/fondoP.png");
    background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body{
     margin-top: 20px;
 }
 
-.logo img{
+.logo img{position: absolute;
     width: 90px;
     height: 90px;
     margin-top: -10px;
@@ -45,19 +45,19 @@ body{
 }
 
 .tres{
-    color: black;
+     color: black;
 }
 
 .cuatro{
-    color: black;
+     color: black;
 }
 
 .cinco{
-    color: black;
+     color: black;
 }
 
 .seis{
-    color: black;
+     color: black;
 }
 
 .formato{
@@ -91,7 +91,7 @@ body{
 .contacto{
     margin: 30px;
     margin-left: 80px;
-    color: #0077b6;
+    color:black;
 }
 
 .espacio{
@@ -143,7 +143,7 @@ body{
 }
 
 .carrusel{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 102px;
     max-width: 85%;
 }
@@ -162,3 +162,11 @@ body{
     margin-left: 50px;
   }
 
+  .rectanguloDos{
+    position: absolute;
+    margin-top: -385px;
+    width: 100%;
+    height: 425px;
+    background-color: #0077b6;
+    opacity: 0.5;
+}

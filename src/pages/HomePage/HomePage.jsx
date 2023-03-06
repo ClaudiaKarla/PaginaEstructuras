@@ -230,6 +230,10 @@ function HomePage() {
         <p className=" espacio">.</p>
     </div>
 
+    <div className="rectanguloDos">
+          .
+      </div>
+
     </div>
    
   );

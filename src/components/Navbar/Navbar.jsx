@@ -13,6 +13,10 @@ function Navbar() {
 
     <nav>
          
+      <div className="rectangulo">
+          .
+      </div>
+
       <Link to="/">
         <div className="inicio">
         <Button /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Inicio</Button>
@@ -60,6 +64,7 @@ function Navbar() {
             <Button variant="secondary">Admin</Button>{" "}
             </div>
           </Link>
+        
         </>
       )}
     </nav>
