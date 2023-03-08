@@ -7,6 +7,7 @@ import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import NuestrosTrabajosPage from "./pages/NuestrosTrabajosPage/NuestrosTrabajos";
 import AdminPage from "./pages/AdminPage/AdminPage";
+import ProyectPage from "./pages/ProyectPage/ProyectPage";
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
@@ -62,6 +63,12 @@ function App() {
           }
         />
 
+          <Route
+          path="/Administrador/proyect"
+          element={
+              <ProyectPage />
+          }
+        />
 
       </Routes>
 

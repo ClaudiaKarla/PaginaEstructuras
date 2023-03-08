@@ -64,6 +64,12 @@ function Navbar() {
             <Button variant="secondary">Admin</Button>{" "}
             </div>
           </Link>
+
+          <Link to="/administrador/proyect">
+            {" "}
+            <div className="proyect">
+            </div>
+          </Link>
         
         </>
       )}

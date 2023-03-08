@@ -9,21 +9,28 @@ import Form from 'react-bootstrap/Form';
 
 function AdminPage() {
 
-    const [email, setEmail] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [emailRegistro, setEmailRegistro] = useState("");
+  const [passwordRegistro, setPasswordRegistro] = useState("");
+  const [userName, setUserName]= useState(" ");
   const [errorMessage, setErrorMessage] = useState(undefined);
 
   const navigate = useNavigate();
 
   const { storeToken, authenticateUser } = useContext(AuthContext);
 
-  const handleEmail = (e) => setEmail(e.target.value);
+  const handleEmail = (e) => setEmail (e.target.value);
+  const handleEmailRegistro = (e) => setEmailRegistro (e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
+  const handlePasswordRegistro = (e) => setPasswordRegistro(e.target.value);
+  const handleUserName = (e) => setUserName(e.target.value);
+  
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     const requestBody = { email, password };
-
+      console.log(email, password)
     // Send a request to the server using axios
     /* 
     axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/login`)
@@ -39,13 +46,51 @@ function AdminPage() {
         // and at last navigate to the home page
         storeToken(response.data.authToken);
         authenticateUser();
-        navigate("/");
+        navigate("/administrador/proyect");
       })
       .catch((error) => {
+        console.log(error)
         // If the request resolves with an error, set the error message in the state
         const errorDescription = error.response.data.message;
         setErrorMessage(errorDescription);
       });
+    };
+
+    
+    const handleSignupSubmit = (e) => {
+      e.preventDefault();
+      // Create an object representing the request body
+      const requestBody = 
+      { email:emailRegistro, 
+        password:passwordRegistro, 
+        name: userName};
+        console.log(requestBody)
+  
+      // Send a request to the server using axios
+      /* 
+      const authToken = localStorage.getItem("authToken");
+      axios.post(
+        `${process.env.REACT_APP_SERVER_URL}/auth/signup`, 
+        requestBody, 
+        { headers: { Authorization: `Bearer ${authToken}` },
+      })
+      .then((response) => {})
+      */
+  
+      // Or using a service
+      authService
+        .signup(requestBody)
+        .then((response) => {
+          // If the POST request is successful redirect to the login page
+          navigate("/administrador");
+          console.log(response)
+        })
+        .catch((error) => {
+          console.log(error)
+          // If the request resolves with an error, set the error message in the state
+          const errorDescription = error.response.data.message;
+          setErrorMessage(errorDescription);
+        });
     };
 
   return (
@@ -60,10 +105,10 @@ function AdminPage() {
     <div className="LoginPage">
    
    <div className="formularioDos">
-    <Form>
+    <Form onSubmit={handleLoginSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Control onChange={handleEmail} name='email' type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
         </Form.Text>
@@ -71,7 +116,7 @@ function AdminPage() {
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Password</Form.Label>
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control onChange={handlePassword} type="password" placeholder="Password" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
        
@@ -80,6 +125,32 @@ function AdminPage() {
         Enviar
       </Button>
     </Form>
+
+    <hr/>
+
+    <Form onSubmit={handleSignupSubmit}>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control onChange={handleEmailRegistro} name='emailRegistro' type="email" placeholder="Enter email" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control onChange={handlePasswordRegistro} name='passwordRegistro' type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control onChange={handleUserName} name='userName' type="text" placeholder="name" />
+      </Form.Group>
+
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+
+
     </div>
 
   </div>
