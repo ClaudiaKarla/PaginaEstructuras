@@ -17,13 +17,9 @@ function Navbar() {
           .
       </div>
 
-      <Link to="/">
-        <div className="inicio">
-        <Button /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Inicio</Button>
-        </div>
-      </Link>
+  
 
-      {isLoggedIn && (
+     {/*{isLoggedIn && (
         <>
           <button onClick={logOutUser}>Logout</button>
 
@@ -33,10 +29,17 @@ function Navbar() {
 
           <span>{user && user.name}</span>
         </>
-      )}
+     )}*/}
 
-      {!isLoggedIn && (
+     {!isLoggedIn && (
         <>
+
+<Link to="/">
+        <div className="inicio">
+        <Button /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Inicio</Button>
+        </div>
+      </Link>
+
           <Link to="/signup">
             {" "}
             <div className="servicios">
@@ -71,8 +74,8 @@ function Navbar() {
             </div>
           </Link>
         
-        </>
-      )}
+     </>
+      )}  
     </nav>
     
   );

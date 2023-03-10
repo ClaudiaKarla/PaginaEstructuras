@@ -30,7 +30,7 @@ function AdminPage() {
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     const requestBody = { email, password };
-      console.log(email, password)
+     // console.log(email, password)
     // Send a request to the server using axios
     /* 
     axios.post(`${process.env.REACT_APP_SERVER_URL}/auth/login`)
@@ -83,7 +83,6 @@ function AdminPage() {
         .then((response) => {
           // If the POST request is successful redirect to the login page
           navigate("/administrador");
-          console.log(response)
         })
         .catch((error) => {
           console.log(error)
@@ -106,7 +105,7 @@ function AdminPage() {
    
    <div className="formularioDos">
     <Form onSubmit={handleLoginSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicEmailDos">
         <Form.Label>Email address</Form.Label>
         <Form.Control onChange={handleEmail} name='email' type="email" placeholder="Enter email" />
         <Form.Text className="text-muted">
@@ -114,7 +113,7 @@ function AdminPage() {
         </Form.Text>
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group className="mb-3" controlId="formBasicPasswordDos">
         <Form.Label>Password</Form.Label>
         <Form.Control onChange={handlePassword} type="password" placeholder="Password" />
       </Form.Group>
@@ -129,11 +128,11 @@ function AdminPage() {
     <hr/>
 
     <Form onSubmit={handleSignupSubmit}>
-      <Form.Group className="mb-3" controlId="formBasicEmail">
+      <Form.Group className="mb-3" controlId="formBasicEmailUno">
         <Form.Label>Email address</Form.Label>
         <Form.Control onChange={handleEmailRegistro} name='emailRegistro' type="email" placeholder="Enter email" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicPassword">
+      <Form.Group className="mb-3" controlId="formBasicPasswordUno">
         <Form.Label>Password</Form.Label>
         <Form.Control onChange={handlePasswordRegistro} name='passwordRegistro' type="password" placeholder="Password" />
       </Form.Group>

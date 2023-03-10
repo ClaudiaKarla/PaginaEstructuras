@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-class ExampleService {
+class ProyectService {
   constructor() {
     this.api = axios.create({
       baseURL: process.env.REACT_APP_SERVER_URL || "http://localhost:5005"
@@ -16,38 +16,40 @@ class ExampleService {
       }
 
       return config;
+  
     });
   }
-
+  
   // POST /api/examples
-  createOne = async (requestBody) => {
-    return this.api.post('/api/examples', requestBody);
+  getProyectos = async () => {
+    return this.api.get('/api/todos-los-proyectos');
   }
 
   // GET /api/examples
-  getAll = async () => {
-    return this.api.get('/api/examples');
+  createProyect = async (requestBody) => {
+    console.log(requestBody)
+    return this.api.post('/api/crear/proyectos',requestBody);
   }
 
   // GET /api/examples/:id
   getOne = async (id) => {
-    return this.api.get(`/api/examples/${id}`);
+    return this.api.get(`/api/un-proyecto/${id}`);
   }
 
   // PUT /api/examples/:id
   updateOne = async (id, requestBody) => {
-    return this.api.put(`/api/examples/${id}`, requestBody);
+    return this.api.put(`/api/actualizar-proyecto/${id}`,requestBody);
   }
 
   // DELETE /api/examples/:id
   deleteProject = async (id) => {
-    return this.api.delete(`/api/examples/${id}`);
+    return this.api.delete(`/api/borrar-proyectos/${id}`);
   } 
-
-
 }
 
 // Create one instance of the service
-const exampleService = new ExampleService();
+const proyectService = new ProyectService();
 
-export default exampleService;
+export default proyectService;
+
+

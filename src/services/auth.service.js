@@ -43,11 +43,12 @@ class AuthService {
     // return axios.post("http://localhost:5005/auth/singup");
   };
 
-  proyect = (requestBody) => {
+  crear = (requestBody) => {
     return this.api.post("/auth/administrador/proyect", requestBody);
     // same as
     // return axios.post("http://localhost:5005/auth/singup");
   };
+  
 
   verify = () => {
     return this.api.get("/auth/verify");
@@ -60,3 +61,4 @@ class AuthService {
 const authService = new AuthService();
 
 export default authService;
+

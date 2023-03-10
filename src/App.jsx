@@ -5,13 +5,15 @@ import HomePage from "./pages/HomePage/HomePage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import SignupPage from "./pages/SignupPage/SignupPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
-import NuestrosTrabajosPage from "./pages/NuestrosTrabajosPage/NuestrosTrabajos";
 import AdminPage from "./pages/AdminPage/AdminPage";
 import ProyectPage from "./pages/ProyectPage/ProyectPage";
+import DetailsPage from "./pages/Details/DetailsPage";
+import CrearProyectosPage from "./pages/CrearProyectosPage/CrearProyectosPage";
 
 import Navbar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
+import EditProyect from "./pages/Edit.Proyect/EditProyect";
 
 function App() {
   return (
@@ -47,12 +49,12 @@ function App() {
           }
         />
 
-        <Route
+        {/*<Route
           path="/trabajos"
           element={
               <NuestrosTrabajosPage />
           }
-        />
+        />*/}
 
         <Route
           path="/administrador"
@@ -64,9 +66,23 @@ function App() {
         />
 
           <Route
-          path="/Administrador/proyect"
+          path="/trabajos"
           element={
               <ProyectPage />
+          }
+        />
+
+          <Route
+          path="/administrador/proyect"
+          element={
+              <CrearProyectosPage />
+          }
+        />
+
+          <Route
+          path="/proyecto/editar/:id"
+          element={
+              <EditProyect/>
           }
         />
 

@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
-
+import Col from  'react-bootstrap/Col';
 
 function HomePage() {
 
@@ -46,7 +46,7 @@ function HomePage() {
   return (
 
 <div>
-
+<Col sm={{span: 24}} md={{span:16}} lg={{span:12}}>
 <div className="logo">
        <img src={"./e1.png"} />
       <div className="lo1">
@@ -233,7 +233,7 @@ function HomePage() {
     <div className="rectanguloDos">
           .
       </div>
-
+</Col>
     </div>
    
   );
