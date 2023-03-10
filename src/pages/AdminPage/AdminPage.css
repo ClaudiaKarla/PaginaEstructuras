@@ -6,6 +6,8 @@
 .tit{
     margin-top: 55px;
     font-size: 30px;
+    text-align: center;
+    margin-left: -85px;
 }
 
 .formularioDos{
@@ -13,4 +15,35 @@
     margin-top: 40px;
     max-width:50%;
     max-height: fit-content;
+}
+
+.registrarse{
+    margin-left: 330px;
+    margin-top: 200px;
+    max-width:50%;
+    max-height: fit-content;
+}
+
+.session{
+    margin-top: 55px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -85px;
+    color: #0077b6;
+}
+
+.separador{
+    margin-top: 50px;
+}
+
+.registrarse{
+    margin-top: 50px;
+}
+
+.reg{
+    margin-top: 55px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -85px;
+    color: #0077b6;
 }

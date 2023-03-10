@@ -11,6 +11,7 @@ import Col from  'react-bootstrap/Col';
 
 function HomePage() {
 
+
   
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -198,7 +199,7 @@ function HomePage() {
     </Form>
 
       <p className="link">¿Quieres Saber más de nosotros?</p>
-      <Link to={"/login"}> Nuestros Trabajos</Link>
+      <Link to={"/trabajos"}> Nuestros Trabajos</Link>
     </div>
 
     </div>

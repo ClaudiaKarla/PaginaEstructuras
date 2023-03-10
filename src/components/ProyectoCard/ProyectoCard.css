@@ -1,0 +1,17 @@
+.carta {
+    margin-top: 70px;
+    margin-left: 20px;
+    display:inline-block;
+}
+
+.carta button{
+   
+    margin-left: 90px;
+    margin-top:-65px;
+}
+
+.borrar button{
+  
+    margin-top: 10px;
+    margin-left: -100px;
+}

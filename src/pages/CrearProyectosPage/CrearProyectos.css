@@ -1,0 +1,21 @@
+.formularioCrear{
+    margin-left: 330px;
+    margin-top: 40px;
+    max-width:50%;
+    max-height: fit-content;
+}
+
+.titulo{
+position:relative;
+margin-top: 50px;
+margin-left: -80px;
+}
+
+.inicioboton{
+    margin-top: 50px;
+    margin-left: -80px;
+}
+
+.formularioCrear button{
+    width: 200px;
+}

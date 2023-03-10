@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import "./CrearProyectos.css";
 import { Link} from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form  from 'react-bootstrap/Form';
@@ -27,27 +28,25 @@ function CrearProyectosPage() {
     console.log(nuevo)
     }
   
-
-
-
   return(
 <div>
 <div>
 <>
-<div className='espacio'>
-.
+<div className='titulo'>
+Crea Proyecto
 </div>
 
-<Link to="/">
+<div className='inicioboton'>
+<Link to="/trabajos">
         <div className="Regresar">
         <Button 
-        /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Regresar a inicio</Button>
+        /*style={{ backgroundColor: "#ce6a85" }}*/variant="secondary">Salir</Button>
         </div>
       </Link>
-
+      </div>
 </>
 
-
+<div className='formularioCrear'>
 <Form onSubmit={handleSubmit}>
 <Form.Group className="mb-3" controlId="formBasicEmailUno">
         <Form.Label>categoria</Form.Label>
@@ -75,24 +74,10 @@ function CrearProyectosPage() {
       </Form.Group>
 
       <Button variant="primary" type="submit">
-        Submit
+        Crea
   </Button>
-  
-     
-
-   
-   
-        <li>
-      <Button variant="primary" type="submit">
-        Editar
-      </Button>
-      <Button >
-          borrar
-      </Button>
-      </li>
-    
-    
     </Form>
+    </div>
     </div>
 </div>
 )

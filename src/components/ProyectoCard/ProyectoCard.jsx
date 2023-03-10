@@ -1,7 +1,9 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom'
+import Link  from 'react-bootstrap/Card';
 import proyectService from "../../services/example.service";
+import Button from 'react-bootstrap/Button';
+import "./ProyectoCard.css";
 
 function ProyectoCard({proye,descripcion, _id, fotos, categoria}) {
  
@@ -12,7 +14,7 @@ function ProyectoCard({proye,descripcion, _id, fotos, categoria}) {
  
   return (
   <>
-    <Link to={`/proyecto/editar/${_id}`}>
+    {/*<Link to={`/proyecto/editar/${_id}`}>
       <button> Editar</button>
       </Link>
 
@@ -21,10 +23,36 @@ function ProyectoCard({proye,descripcion, _id, fotos, categoria}) {
     
      
     <Card title={proye} >
-    {descripcion}</Card>
+  {descripcion}</Card>*/}
+
+
+    <div className='carta'>
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={fotos} />
+      <Card.Body>
+        <Card.Title >{proye}</Card.Title>
+        <Card>{categoria}</Card>
+        <Card.Text>
+        {descripcion}
+        </Card.Text>
+        <div className='borrar'>
+        <Button onClick={() => borrar(_id)}  variant="primary">Borrar</Button>
+        </div>
+        <Button
+        onClick={()=>
+         < Link to={`/proyecto/editar/${_id}`}/>}
+         >Editar</Button>
+        
+
+      </Card.Body>
+    </Card>
+    </div>
+
+
+
     </>
 
-    
+
   )
 }
 

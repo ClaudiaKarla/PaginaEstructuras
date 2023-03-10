@@ -55,7 +55,6 @@ function LoginPage() {
         </p>
       </div>
 
-
       <div className="empresas">
         <p>Nuestros Clientes</p>
       </div>

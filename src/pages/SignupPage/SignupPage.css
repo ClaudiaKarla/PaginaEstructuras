@@ -19,7 +19,7 @@
 }
 
 .serviciosUno img{
-    width: 1120px;
+    width: 1320px;
 	height:250px;
     object-fit: cover;
 }
@@ -31,7 +31,7 @@
 .serviciosDos img{
     position: absolute;
     margin-top: 70px;
-    margin-left: 200px;
+    margin-left: 330px;
     width: 350px;
     height: auto;
 }

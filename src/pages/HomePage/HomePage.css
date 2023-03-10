@@ -14,14 +14,15 @@
 }
 
 .logo{
-    margin-left: -920px;
+    margin-left: -1050px;
     margin-top: 20px;
 }
 
-.logo img{position: absolute;
+.logo img{
+   
     width: 90px;
     height: 90px;
-    margin-top: -10px;
+    margin-top: 70px;
     margin-left: 40px;
 }
 
@@ -61,7 +62,7 @@
 }
 
 .formato{
-    margin-left: 330px;
+    margin-left: 375px;
     margin-top: 40px;
     max-width:50%;
     max-height: fit-content;
@@ -73,18 +74,18 @@
 
 .espec1{
     margin-top: 30px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 
 .espec2{
     margin-top: -520px;
-    margin-left: 730px;
+    margin-left: 800px;
 }
 
 .informacion{
     line-height:8px;
     text-align: justify;
-    margin-left: 500px;
+    margin-left: 620px;
     margin-top: 50px;
 }
 
@@ -156,7 +157,7 @@
 .linea {
     border-top: 1px solid #adb5bd;
     height: 1px;
-    max-width: 1200px;
+    max-width: 1350px;
     padding: 0;
     margin-top: 70px;
     margin-left: 50px;
@@ -168,5 +169,5 @@
     width: 100%;
     height: 425px;
     background-color: #0077b6;
-    opacity: 0.5;
+    opacity: 0.2;
 }

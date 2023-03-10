@@ -99,10 +99,11 @@ function AdminPage() {
         <p className="espacio"> .</p>
       </div>
 
-    <div className="tit">Administrador de la página</div>
+    <div className="tit">Administrador</div>
 
     <div className="LoginPage">
-   
+   <div className='iniciar'>
+   <div className="session">Inicia session</div>
    <div className="formularioDos">
     <Form onSubmit={handleLoginSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmailDos">
@@ -124,9 +125,14 @@ function AdminPage() {
         Enviar
       </Button>
     </Form>
+    </div>
 
+    <div className='separador'>
     <hr/>
+    </div>
 
+    <div className="reg">Registrate</div>
+<div className='registrarse'>
     <Form onSubmit={handleSignupSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmailUno">
         <Form.Label>Email address</Form.Label>
@@ -148,7 +154,7 @@ function AdminPage() {
         Submit
       </Button>
     </Form>
-
+    </div>
 
     </div>
 

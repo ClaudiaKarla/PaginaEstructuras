@@ -31,6 +31,7 @@ function SignupPage() {
         Supervición de Montaje de estructura metalica
         </li>
         </div>
+        
         <div className="espacio">
           .
         </div>
